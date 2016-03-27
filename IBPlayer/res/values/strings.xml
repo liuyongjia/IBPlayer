@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IBPlayer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="VideoView_error_text_unknown">对不起,这个视频不能播放。</string>
+    <string name="VideoView_error_button">OK</string>
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+    <string name="imageview_content_description"></string>
+    <string name="content_desc_lock">锁定</string>
+    <string name="video_original">100%</string>
+    <string name="video_fit_screen">全屏</string>
+    <string name="video_stretch">拉伸</string>
+    <string name="video_crop">裁剪</string>
+    <string name="video_screen_locked">屏幕已锁定</string>
+    <string name="video_screen_unlocked">屏幕锁定已解除</string>
+    <string name="video_layout_buffering_progress">缓冲: %.2f%%</string>
+    <string name="video_cannot_play">对不起,这个视频不能播放。</string>
+    <string name="file_explorer_sdcard_not_available">SD卡无法读取</string>
+    <string name="video_screenshot_save_in">截图存放在 %s.</string>
+    <string name="video_screenshot_failed">截图失败</string>
+    <string name="closing_file">正在退出…</string>
+
+</resources>
