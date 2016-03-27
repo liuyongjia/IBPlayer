@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.scaletest.MainActivity" >
+
+    <com.example.ibplayer.view.VideoView
+        android:id="@+id/surface_view" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+         />
+    
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:id="@+id/sv_danmaku"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <FrameLayout 
+        android:layout_centerInParent="true"
+        android:id="@+id/volume_bright_back"
+        android:background="#000000"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView 
+            android:id="@+id/iv_volume_bright_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/video_volumn_bg"/>
+        <FrameLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="25dp"
+            >
+            <ImageView 
+                android:id="@+id/iv_progress_back"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/video_num_bg"/>
+            <ImageView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/video_num_front"
+                android:id="@+id/iv_progress_front"
+                android:scaleType="matrix"/>
+        </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>

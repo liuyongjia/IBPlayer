@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <ImageView
+            android:id="@+id/game_ico"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/game_ico" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/game_ico"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+             />
+
+        <TextView
+            android:id="@+id/tv_factory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/game_ico"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+             />
+
+    </RelativeLayout>
+    
+    <com.example.ibplayer.view.HorizontalListView
+        android:id="@+id/hs"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></com.example.ibplayer.view.HorizontalListView>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        android:text="游戏介绍" />
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+         />
+
+</LinearLayout>

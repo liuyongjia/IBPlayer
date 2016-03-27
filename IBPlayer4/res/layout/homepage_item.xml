@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:padding="4dp" >
+        
+        <FrameLayout
+               android:layout_width="match_parent"
+            android:layout_height="80dp" >
+
+              <ImageView
+                android:id="@+id/list_item_image"
+	            android:layout_width="match_parent"
+	            android:layout_height="80dp"
+	            android:padding="0dp"
+	            android:scaleType="centerCrop" 
+	            android:src="@drawable/image_demo"/>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="20dp"
+                  android:layout_gravity="bottom"
+                  android:gravity="left|center"
+                  android:padding="3dp" >
+
+                  <ImageView
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:src="@drawable/ic_info_views" />
+
+                  <TextView
+                      android:id="@+id/BangumiImageView_baofang"
+                      android:layout_width="50dp"
+                      android:layout_height="20dp"
+                      android:text="566666"
+                      android:textColor="#000000" />
+
+                  <ImageView
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:src="@drawable/ic_info_danmakus" />
+
+                  <TextView
+                      android:id="@+id/BangumiImageView_danmugu"
+                      android:layout_width="50dp"
+                      android:layout_height="20dp"
+                      android:text=""
+                      android:textColor="#000000" />
+
+              </LinearLayout>
+          </FrameLayout>
+        
+
+        <View
+            android:layout_marginTop="2dp"
+            android:background="#f5f5f5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/list_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="2"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text=""
+            android:textColor="#adadad"
+            android:textIsSelectable="false"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

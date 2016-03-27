@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+
+        <RelativeLayout
+            android:id="@+id/bangumiView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="1dp"
+                android:text="番剧"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:focusable="false"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv_bangumi"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="#f2f2f2"
+            android:scrollbarStyle="outsideInset"
+            android:numColumns="2">
+
+        </GridView>
+        
+        <RelativeLayout
+            android:id="@+id/dougaView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="1dp"
+                android:text="动画区"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:focusable="false"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+        
+         <GridView
+            android:id="@+id/gv_douga"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="#f2f2f2"
+            android:scrollbarStyle="outsideInset"
+            android:numColumns="2">
+        </GridView>
+        
+        <RelativeLayout
+            android:id="@+id/kichikuView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="1dp"
+                android:text="鬼畜区"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:focusable="false"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+        
+        <GridView
+            android:id="@+id/gv_kichiku"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="#f2f2f2"
+            android:scrollbarStyle="outsideInset"
+            android:numColumns="2">
+        </GridView>
+        
+        <RelativeLayout
+            android:id="@+id/teleplayView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="1dp"
+                android:text="电视剧区"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:focusable="false"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+        
+        <GridView
+            android:id="@+id/gv_teleplay"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="#f2f2f2"
+            android:scrollbarStyle="outsideInset"
+            android:numColumns="2">
+        </GridView>
+        
+        <RelativeLayout
+            android:id="@+id/musicView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="1dp"
+                android:text="音乐区"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:focusable="false"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+        
+        <GridView
+            android:id="@+id/gv_music"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="#f2f2f2"
+            android:scrollbarStyle="outsideInset"
+            android:numColumns="2">
+        </GridView>
+        
+        <RelativeLayout
+            android:id="@+id/gameView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="1dp"
+                android:text="游戏区"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:focusable="false"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+        
+        <GridView
+            android:id="@+id/gv_game"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="#f2f2f2"
+            android:scrollbarStyle="outsideInset"
+            android:numColumns="2">
+        </GridView>
+        
+        
+        <RelativeLayout
+            android:id="@+id/entView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="1dp"
+                android:text="娱乐区"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:focusable="false"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+        
+        <GridView
+            android:id="@+id/gv_ent"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="#f2f2f2"
+            android:scrollbarStyle="outsideInset"
+            android:numColumns="2">
+        </GridView>
+        
+        <RelativeLayout
+            android:id="@+id/movieView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="1dp"
+                android:text="电影区"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:focusable="false"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+        
+        <GridView
+            android:id="@+id/gv_movie"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="#f2f2f2"
+            android:scrollbarStyle="outsideInset"
+            android:numColumns="2">
+        </GridView>
+        
+        
+        <RelativeLayout
+            android:id="@+id/technologyView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="1dp"
+                android:text="科技区"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:focusable="false"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+        
+        <GridView
+            android:id="@+id/gv_technology"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="#f2f2f2"
+            android:scrollbarStyle="outsideInset"
+            android:numColumns="2">
+        </GridView>
+        
+        <RelativeLayout
+            android:id="@+id/danceView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="1dp"
+                android:text="舞蹈区"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:focusable="false"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+        
+        <GridView
+            android:id="@+id/gv_dance"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="#f2f2f2"
+            android:scrollbarStyle="outsideInset"
+            android:numColumns="2">
+        </GridView>
+        
+        <RelativeLayout
+            android:id="@+id/fashionView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="1dp"
+                android:text="时尚区"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:focusable="false"
+                android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+        
+        <GridView
+            android:id="@+id/gv_fashion"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="#f2f2f2"
+            android:scrollbarStyle="outsideInset"
+            android:numColumns="2">
+        </GridView>
+
+    </LinearLayout>
+
+</ScrollView>
